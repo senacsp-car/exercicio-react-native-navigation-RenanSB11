@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import {createDrawerNavigator} from "@react-navigation/drawer"
 import React from "react";
 import Tela1 from "./src/screens/Tela1";
 import Tela2 from "./src/screens/Tela2";
@@ -9,6 +10,7 @@ import Splash from "./src/Splash";
 export default function App() {
 
   const Stack = createNativeStackNavigator();
+  const Drawer = createDrawerNavigator();
 
   return (
     <NavigationContainer>
