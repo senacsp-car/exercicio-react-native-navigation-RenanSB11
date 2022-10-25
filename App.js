@@ -4,6 +4,7 @@ import React from "react";
 import Tela1 from "./src/screens/Tela1";
 import Tela2 from "./src/screens/Tela2";
 import Tela3 from "./src/screens/Tela3";
+import Splash from "./src/Splash";
 
 export default function App() {
 
@@ -11,7 +12,8 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Tela1">
+      <Stack.Navigator initialRouteName="Splash">
+      <Stack.Screen name='Splash' component={Splash} options={{headerShown:false,}} />
       <Stack.Screen name='Tela1' component={Tela1} />
       <Stack.Screen name='Tela2' component={Tela2} />
       <Stack.Screen name='Tela3' component={Tela3} />
